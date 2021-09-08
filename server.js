@@ -1,12 +1,17 @@
 const { urlencoded } = require('express');
 const express = require('express');
+const cors = require('cors');
 require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
-const router = express.Router();
 
 app.use(express.json());
 app.use(urlencoded({ extended: false }));
+app.use(
+  cors({
+    origin: '*',
+  })
+);
 
 require('./db/db')();
 
