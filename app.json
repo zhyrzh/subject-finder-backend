@@ -1,0 +1,10 @@
+{
+  "name": "Subjects finder Backend",
+  "description": "Backend server for subjects finder app",
+  "env": {
+    "DB_CONNECTION_STRING": {
+      "description": "Mongodb atlas connection string",
+      "value": "mongodb+srv://arongrhyz:t6SLlSQljRzZOM6n@cluster0.8z5oj.mongodb.net/subjects-finder?retryWrites=true&w=majority"
+    }
+  }
+}
